@@ -5,6 +5,7 @@ import Logo from './Logo';
 
 const HeaderContainer = styled.div`
   background: ${Colors.blackNinja};
+  padding: 32px 40px;
 `;
 
 const Header = () => {
