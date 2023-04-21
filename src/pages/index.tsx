@@ -1,15 +1,17 @@
-import * as React from 'react';
+import React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import Header from '../components/Header';
 import GlobalStyle from '../components/GlobalStyle';
-import { EThemeMode } from '../types/themes';
+import AppContainer from '../components/AppContext';
 
 const IndexPage: React.FC<PageProps> = (props) => {
   return (
-    <>
-      <GlobalStyle theme={EThemeMode.DARK} />
-      <Header />
-    </>
+    <AppContainer>
+      <>
+        <GlobalStyle />
+        <Header />
+      </>
+    </AppContainer>
   );
 };
 

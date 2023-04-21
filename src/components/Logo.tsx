@@ -9,13 +9,15 @@ interface ILogoProps {
 }
 
 const LogoContainer = styled.div<{ theme: EThemeMode }>`
-  background: ${Colors.blackNinja};
-  color: ${EThemeMode.DARK ? Colors.whiteFoggyPith : Colors.blackNinja};
-  font-size: 2rem;
   font-family: ${Fonts.Domine.css};
+  color: ${(props) =>
+    props.theme === EThemeMode.DARK
+      ? Colors.whiteFoggyPith
+      : Colors.blackNinja};
+  font-size: 2rem;
 `;
 
-const Logo = ({ theme = EThemeMode.LIGHT }: ILogoProps) => {
+const Logo = ({ theme }: ILogoProps) => {
   return <LogoContainer theme={theme}>andri'space </LogoContainer>;
 };
 
