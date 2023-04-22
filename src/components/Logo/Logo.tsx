@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Colors from '../constants/Colors';
-import Fonts from '../constants/Fonts';
-import { EThemeMode } from '../types/themes';
+import Colors from '../../constants/Colors';
+import Fonts from '../../constants/Fonts';
+import { EThemeMode } from '../../types/themes';
 
 interface ILogoProps {
   theme?: EThemeMode;

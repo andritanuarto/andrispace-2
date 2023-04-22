@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Colors from '../constants/Colors';
-import { EThemeMode } from '../types/themes';
-import { useAppContext } from './AppContext';
-import Logo from './Logo';
+import Colors from '../../constants/Colors';
+import { EThemeMode } from '../../types/themes';
+import { useAppContext } from '../AppContext';
+import Logo from '../Logo/Logo';
 
 const HeaderContainer = styled.div`
   padding: 32px 40px;
