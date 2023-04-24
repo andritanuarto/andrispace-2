@@ -1,9 +1,7 @@
-const GOOGLE_FONT_URL = 'https://fonts.googleapis.com/css2?family='
+export const GOOGLE_FONT_URL = 'https://fonts.googleapis.com'
 
 const Fonts = {
-  Domine: {
-    css: 'Domine, serif',
-    url: `${GOOGLE_FONT_URL}Domine&display=swap`
-  }
+  Domine: 'Domine, serif'
 }
+
 export default Fonts;

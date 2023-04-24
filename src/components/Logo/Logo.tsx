@@ -9,7 +9,7 @@ interface ILogoProps {
 }
 
 const LogoContainer = styled.div<{ theme: EThemeMode }>`
-  font-family: ${Fonts.Domine.css};
+  font-family: ${Fonts.Domine};
   color: ${(props) =>
     props.theme === EThemeMode.DARK
       ? Colors.whiteFoggyPith
