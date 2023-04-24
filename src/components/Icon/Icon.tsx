@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const IconContainer = styled.span<{ theme: EThemeMode }>`
   height: 24px;
   margin-right: 16px;
+  outline: 0;
 `;
 
 interface IToggleSearchBar {
