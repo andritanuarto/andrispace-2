@@ -21,6 +21,10 @@ const MainHelmet = () => {
         rel="stylesheet"
         href={`${GOOGLE_FONT_URL}/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0`}
       />
+      <link
+        href={`${GOOGLE_FONT_URL}/css2?family=Source+Code+Pro&display=swap`}
+        rel="stylesheet"
+      ></link>
     </Helmet>
   );
 };

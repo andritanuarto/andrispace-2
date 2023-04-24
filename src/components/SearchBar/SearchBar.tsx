@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Colors from '../../constants/Colors';
+import Fonts from '../../constants/Fonts';
 import { EThemeMode } from '../../types/themes';
 import Icon from '../Icon/Icon';
 
@@ -17,6 +18,7 @@ const SearchBarContainer = styled.div<{ theme: EThemeMode }>`
       ? Colors.whiteFoggyPith
       : Colors.blackNinja};
   input {
+    font-family: ${Fonts.SourceCodePro};
     flex: 1;
     height: 32px;
     border: none;
