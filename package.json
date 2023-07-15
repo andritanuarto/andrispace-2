@@ -23,6 +23,7 @@
     "gatsby-plugin-react-helmet": "^6.9.0",
     "gatsby-plugin-styled-components": "^6.9.0",
     "gatsby-source-filesystem": "^5.9.0",
+    "million": "^2.4.8-beta.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",

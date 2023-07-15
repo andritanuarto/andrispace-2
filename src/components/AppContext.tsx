@@ -7,6 +7,9 @@ import React, {
   useState,
 } from 'react';
 import { EThemeMode } from '../types/themes';
+import GlobalStyle from './GlobalStyle';
+import Header from './Header/Header';
+import MainHelmet from './MainHelmet/MainHelmet';
 
 export interface AppContextProps {
   theme: EThemeMode;
@@ -34,6 +37,9 @@ const AppContainer = ({ children }: IAppContainerProps) => {
         setTheme,
       }}
     >
+      <MainHelmet />
+      <GlobalStyle />
+      <Header />
       {children}
     </AppContext.Provider>
   );
