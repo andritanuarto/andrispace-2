@@ -30,18 +30,6 @@ const Switch = styled.div<{ theme: EThemeMode }>`
       : Colors.cerebralGrey};
 `;
 
-const SwitchLabel = styled.div<{ theme: EThemeMode }>`
-  width: 24px;
-  height: 24px;
-  top: 4px;
-  position: relative;
-  left: ${(props) => (props.theme === EThemeMode.DARK ? '36px' : '8px')};
-  color: ${(props) =>
-    props.theme === EThemeMode.DARK ? Colors.pacMan : Colors.cheddar};
-  transition-property: left, color;
-  transition-duration: 0.5s;
-`;
-
 interface IToggleSwitch {
   theme?: EThemeMode;
   setTheme: React.Dispatch<React.SetStateAction<EThemeMode>>;
