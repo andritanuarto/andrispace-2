@@ -1,2 +1,0 @@
-token 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
-git remote set-url origin https://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@github.com/andritanuarto/andrispace-2

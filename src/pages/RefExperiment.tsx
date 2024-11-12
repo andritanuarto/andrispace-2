@@ -4,6 +4,13 @@ interface IRefExperiment {
   childRef: React.MutableRefObject<HTMLDivElement | null>;
 }
 
+const style = {
+  fontSize: '30px',
+  marginBottom: '50px',
+  display: 'inline-block',
+  marginRight: '20px',
+};
+
 const RefExpriment = forwardRef(({ childRef }: IRefExperiment) => {
   const elementRef = useRef<HTMLDivElement | null>(null);
 
@@ -17,21 +24,30 @@ const RefExpriment = forwardRef(({ childRef }: IRefExperiment) => {
     return () => {
       if (elementRef && elementRef.current) {
         elementRef.current.removeEventListener('mouseover', () =>
-          log('mouseOver')
+          log('mouseOverrrr')
         );
         elementRef.current.removeEventListener('mouseout', () =>
-          log('mouseOut')
+          log('mouseOutttt')
         );
       }
+      console.log('unmount1');
+    };
+  }, [elementRef]);
+
+  useEffect(() => {
+    return () => {
+      console.log('umount2');
     };
   }, []);
 
   return (
     <>
-      <div style={{ fontSize: '30px', marginBottom: '50px' }} ref={elementRef}>
-        Ref Experiment
+      <div style={style} ref={elementRef}>
+        Ref In the component
       </div>
-      <div ref={childRef}>childRef</div>
+      <div style={style} ref={childRef}>
+        Ref in Parent
+      </div>
     </>
   );
 });
